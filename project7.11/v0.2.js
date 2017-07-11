@@ -1,3 +1,4 @@
+'use strict';
 //根据Barcode合并去重
 function findCommonBarcodes(inputs) {
     let barcode = [];
@@ -65,7 +66,7 @@ function BarcodeMatch(newInputs) {
 function buildShopSheet(allMessage) {
     let allShopMessage = new Array();
     let c = 0;
-    let sum = 0
+    let sum = 0;
     for (let i = 0; i < allMessage.length; i++) {
         allShopMessage[c++] = {
             name: allMessage[i].name,
@@ -109,7 +110,7 @@ let inputs = [
 
 let barcode = findCommonBarcodes(inputs);
 let newInputs = buildSheeting(barcode, inputs);
-let allMessage = BarcodeMatch(newInputs)
+let allMessage = BarcodeMatch(newInputs);
 let allShopMessage = buildShopSheet(allMessage);
 let shopSheets = buildShopShow(allShopMessage);
 let result = buildSheetString(shopSheets);
