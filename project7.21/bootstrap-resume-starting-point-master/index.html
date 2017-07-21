@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>旺旺云音乐</title>
+        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/hot.css">
+        <script src="./jquery-3.2.1.js"></script>        
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap-3.3.7-dist/js/bootstrap.js" rel="stylesheet">
+    </head>
+    <body>
+        <!--write your code here-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">旺旺云音乐</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">音乐人 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">我的音乐</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">热门音乐 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">排行榜</a></li>
+                                <li><a href="#">推荐</a></li>
+                                <li><a href="#">歌单</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">主播电台</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">新歌上架</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="单曲/歌手/专辑/歌单/MV">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">下载客户端</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">手机号登录</a></li>
+                                <li><a href="#">微信登录</a></li>
+                                <li><a href="#">QQ号登录</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">新浪微博登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- 轮播展示-->
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://imge.kugou.com/commendpic/20170720/20170720220001745141.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <a class="btn btn-large btn-primary" href="#">立即观看</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://imge.kugou.com/commendpic/20170720/20170720200103975849.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <a class="btn btn-large btn-primary" href="#">一起去吧</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://imge.kugou.com/commendpic/20170719/20170719184002617263.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <a class="btn btn-large btn-primary " href="#">马上出发</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div><!-- /.carousel -->
+        <!-- Three columns of text below the carousel（内容板块） -->
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://imge.kugou.com/v2/rank_cover/T1M4h4BKKj1RCvBVdK.jpg_240x240.jpg" alt="额" class="img-circle">
+                    <div class="caption" style="background-color:palegoldenrod;">
+                        <h3 style="text-align:center">旺旺飙升榜</h3>
+                        <p>1.刘惜君－醉里红尘[醉玲珑电视剧插曲]</br>2.杨宗纬－越过山丘</br>3.陶钰玉－好想你</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Open</a> <a href="#" class="btn btn-default" role="button">Close</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://imge.kugou.com/v2/rank_cover/T1fHd4BXd_1RCvBVdK.jpg_240x240.jpg" alt="额" class="img-circle">
+                    <div class="caption" style="background-color:palegoldenrod;">
+                        <h3 style="text-align:center">旺旺TOP500</h3>
+                        <p>1.杨宗纬 张碧晨－凉凉</br>2.赵雷－成都</br>3.李玉刚－刚好遇见你</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Open</a> <a href="#" class="btn btn-default" role="button">Close</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="http://imge.kugou.com/v2/rank_cover/T1Fpd4BKbg1RCvBVdK.jpg_240x240.jpg" alt="额" class="img-circle">
+                    <div class="caption" style="background-color:palegoldenrod;">
+                        <h3 >网络红歌榜</h3>
+                        <p>1.金南岭－逆流成河</br>2.高安－天各一方</br>3.郑源－伴</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Open</a> <a href="#" class="btn btn-default" role="button">Close</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  点击此处有惊喜！
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">神秘礼物：</h4>
+      </div>
+      <div class="modal-body">
+        支付宝转账到此帐号：15770783786</br>备注地址，自动发货
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </body>
+</html>

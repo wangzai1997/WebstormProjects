@@ -1,0 +1,9 @@
+.m-nav .hot {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 90px;
+    width: 28px;
+    height: 19px;
+    background-position: -190px 0;
+}
