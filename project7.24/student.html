@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学生成绩管理系统</title>
+        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+        <script src="./jquery-3.2.1.js"></script>        
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+        <script src="student.js"></script>
+        <script type="text/javascript"></script>
+    </head>
+    <body>
+        <!--write your code here-->
+        <table class="table" id="table">
+            <tr>
+                <th>姓名</th>
+                <th>数学</th>
+                <th>语文</th>
+                <th>英语</th>
+                <th>编程</th>
+                <th>平均分</th>
+                <th>总分</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td>95</td>
+                <td>98</td>
+                <td>96</td>
+                <td>97</td>
+                <td>388</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>90</td>
+                <td>91</td>
+                <td>90</td>
+                <td>89</td>
+                <td>90</td>
+                <td>360</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>99</td>
+                <td>100</td>
+                <td>98</td>
+                <td>99</td>
+                <td>99</td>
+                <td>396</td>
+            </tr>
+            <tr>
+                <form id="myform" name="myform" >
+                <div class="row">
+                <div class="col-xs-2">
+                <td><input type="text" name="name" class="form-control" placeholder="name" value="" id="name"></td>
+                <td><input type="text" name="math" class="form-control" placeholder="math" value="" id="math"></td>
+                <td><input type="text" name="chinese" class="form-control" placeholder="chinese" value="" id="chinese"></td>
+                <td><input type="text" name="english" class="form-control" placeholder="english" value="" id="english"></td>
+                <td><input type="text" name="progress" class="form-control" placeholder="progress" value="" id="progress"></td>
+                <td><input type="text" name="average" class="form-control" placeholder="average" value="" id="average"></td>
+                <td><input type="text" name="subtotal" class="form-control" placeholder="subtotal" value="" id="subtotal"></td>
+                </div>
+                </div>
+                <td><input type="submit" value="提交" onclick="submitTest()"></td>
+                </form>
+
+            </tr>
+
+        </table>
+    <h2>请输入要查询的学生姓名，中间用,隔开：</h2>
+        <table class="table" id="table2">
+        <form id="search" name="search" >
+        <div class="col-xs-2">
+            <tr>
+            <td><input type="text" name="search" class="form-control" placeholder="张三,李四" id="input"></td>
+            <td><button type="button" onclick="searchTest();">查询</button></td>
+            </tr>
+        </div>
+        </form>
+        </table>
+    </body>
+</html>

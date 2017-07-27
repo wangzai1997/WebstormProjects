@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>成绩单后台管理系统</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.addStudentBtn();
+        $.showStudents();
+        $.inquireStudentId();
+        $.inquire();
+    });
+</script>
+<div class="container">
+    <div class="col-lg-5"><h2>学生成绩单后台管理系统</h2>
+        <p>对学生的信息进行增删改查</p></div>
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control" id="inquireInput" placeholder="请按正确的格式输入要打印的学生的学号（格式： 学号, 学号,…）">
+            <span class="input-group-btn">
+                  <button type="button" disabled="disabled" class="btn inquireBtn btn-primary">查询</button>
+                    </span>
+        </div>
+
+    </div>
+    <form id='add-form'>
+        <table class="table active" width="80%">
+            <thead>
+            <tr>
+                <th width="12%">姓名</th>
+                <th width="12%">学号</th>
+                <th width="12%">数学</th>
+                <th width="12%">英语</th>
+                <th width="12%">语文</th>
+                <th width="12%">编程</th>
+                <th width="12%">总分</th>
+                <th width="8%">删除</th>
+                <th width="8%">修改</th>
+            </tr>
+            </thead>
+            <tbody class="show-students">
+
+            </tbody>
+        </table>
+    </form>
+    <span id="show"></span>
+    <button type="button" class="add-student btn btn-primary">添加学生</button>
+    <span id="outcome"></span>
+</div>
+
+</body>
+</html>
+
